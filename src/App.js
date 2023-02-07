@@ -49,7 +49,7 @@ function App() {
             onClick={() => setShowAddTodoForm(!showAddTodoForm)}
             className="btn btn-primary"
           >
-            New Todo
+           {showAddTodoForm ? 'Close New Todo':'New Todo'}
           </button>
           {showAddTodoForm && <NewTodoForm addTodo={addTodo} />}
         </div>
